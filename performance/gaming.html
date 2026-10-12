@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaming performance analyzer | CoreForge</title>
+<meta name="description" content="Gaming performance analyzer layout. No benchmark data is loaded in this prototype.">
+<!-- Add a canonical URL here once a real domain is configured. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/performance.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="utility"><div class="wrap">
+<span>Prototype with sample data. Prices are not live.</span>
+<ul>
+<li><a href="../pages/search.html">Search</a></li>
+<li><a href="../pages/saved-builds.html">Saved Builds</a></li>
+<li><a href="../pages/compare-list.html">Compare List</a></li>
+<li><a href="../pages/wishlist.html">Wishlist</a></li>
+<li><a href="../pages/account.html">Account</a></li>
+<li><span aria-label="Currency: Bangladeshi taka">Currency: BDT (৳)</span></li>
+</ul></div></div>
+<div class="wrap"><div class="bar">
+<a class="logo" href="../index.html"><i aria-hidden="true"></i>CoreForge</a>
+<input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+<label class="burger" for="nav-toggle" aria-hidden="true">Menu</label>
+<nav class="nav" aria-label="Main">
+<ul>
+<li class="has-menu"><a class="top" href="../pages/components.html">Components</a><div class="menu"><a href="../products/cpu.html">Processors (CPU)</a><a href="../products/gpu.html">Graphics Cards (GPU)</a><a href="../products/motherboard.html">Motherboards</a><a href="../products/ram.html">Memory (RAM)</a><a href="../products/storage.html">Storage (SSD & HDD)</a><a href="../products/psu.html">Power Supplies (PSU)</a><a href="../products/case.html">PC Cases</a><a href="../products/cooler.html">CPU Coolers</a><a href="../products/fans.html">Case Fans</a><a href="../products/monitors.html">Monitors</a><a href="../products/peripherals.html">Peripherals</a><a href="../products/prebuilt.html">Prebuilt PCs</a></div></li>
+<li><a class="top" href="../builds/builder.html">PC Builder</a></li>
+<li><a class="top" href="../compare/index.html">Compare</a></li>
+<li><a class="top" href="../builds/budget.html">Build by Budget</a></li>
+<li class="has-menu"><a class="top" href="../performance/gaming.html" aria-current="page">Performance</a><div class="menu" style="min-width:260px;grid-template-columns:1fr"><a href="../performance/gaming.html">Gaming performance</a><a href="../performance/creator.html">Creator and productivity</a><a href="../builds/compare-builds.html">Compare builds</a></div></li>
+<li><a class="top" href="../guides/index.html">Guides &amp; Reviews</a></li>
+</ul>
+<a class="btn btn-primary build-cta" href="../builds/builder.html">Build My PC</a>
+</nav></div></div>
+</header>
+<main id="main">
+<div class="wrap"><div class="page-title"><p class="crumbs"><a href="../index.html">Home</a> / <a href="../performance/gaming.html">Performance</a> / Gaming</p><h1>Gaming performance analyzer</h1><p class=lede>Pick hardware, a game and settings to see expected frame rates, when verified data exists.</p></div></div><div class="wrap section" style="padding-top:0">
+<p class="notice "><strong>Sample data.</strong> The inputs below are a prototype layout and do not calculate anything. No benchmark data is loaded, so no FPS values are shown. Results depend on game version, drivers, settings and background load. Estimates interpolated from related hardware will be labeled as estimates.</p>
+<div class="dash"><form class="panel" aria-label="Analyzer inputs (prototype)"><h2>Inputs</h2><div class="field"><label for="g-cpu">CPU</label><select id="g-cpu"><option>AMD Ryzen 5 5600</option><option>Intel Core i5-12400F</option><option>AMD Ryzen 5 7600</option><option>AMD Ryzen 7 5700X</option></select></div><div class="field"><label for="g-gpu">GPU</label><select id="g-gpu"><option>GeForce RTX 4060 8GB (partner model)</option><option>Radeon RX 7600 8GB (partner model)</option><option>Arc B580 12GB (partner model)</option><option>GeForce RTX 4070 SUPER 12GB (partner model)</option></select></div><div class="field"><label for="g-ram">RAM</label><select id="g-ram"><option>16 GB (2 x 8 GB)</option><option>32 GB (2 x 16 GB)</option><option>16 GB (1 x 16 GB)</option></select></div><div class="field"><label for="g-game">Game</label><select id="g-game"><option>Counter-Strike 2</option><option>Valorant</option><option>Rainbow Six Siege X</option><option>Overwatch 2</option><option>PUBG: Battlegrounds</option><option>Fortnite</option><option>Apex Legends</option><option>Call of Duty: Warzone</option><option>Cyberpunk 2077</option><option>Marvel's Spider-Man Remastered</option><option>Elden Ring</option><option>Hogwarts Legacy</option><option>Forza Horizon 5</option><option>F1 25</option><option>Microsoft Flight Simulator 2024</option><option>Cities: Skylines II</option><option>Civilization VI</option><option>Age of Empires IV</option></select></div><div class="field"><label for="g-res">Resolution</label><select id="g-res"><option>1920 x 1080</option><option>2560 x 1440</option><option>3840 x 2160</option></select></div><div class="field"><label for="g-preset">Graphics preset</label><select id="g-preset"><option>Low</option><option>Medium</option><option>High</option><option>Ultra</option></select></div><div class="field"><label for="g-up">Upscaling</label><select id="g-up"><option>Off</option><option>Quality</option><option>Balanced</option><option>Performance</option></select></div><button class="btn btn-primary" type="button" disabled>Analyze (needs data and JavaScript)</button></form>
+<div><div class="panel"><h2>Results</h2><p class="muted">Selected: Ryzen 5 5600, RTX 4060, 16 GB, 1920 x 1080, High (example selection)</p><div class="gauge"><div class="top"><span>Estimated average FPS</span><span class="muted">Not available</span></div><div class="track"></div><div class="gtext">Needs a verified benchmark for this CPU, GPU, game, resolution and preset.</div></div><div class="gauge"><div class="top"><span>1% low FPS</span><span class="muted">Not available</span></div><div class="track"></div><div class="gtext">Shown only when the source reports it.</div></div><div class="gauge"><div class="top"><span>Expected performance category</span><span class="muted">Not available</span></div><div class="track"></div><div class="gtext">Assigned only from verified results.</div></div><div class="gauge"><div class="top"><span>Resolution suitability</span><span class="muted">Not available</span></div><div class="track"></div><div class="gtext">Assigned only from verified results.</div></div><div class="gauge"><div class="top"><span>CPU or GPU limitation</span><span class="muted">Not available</span></div><div class="track"></div><div class="gtext">Shown only when evidence supports it.</div></div></div>
+<div class="panel" style="margin-top:1rem"><h3>Record format for future benchmark data</h3><p class="muted">A result is published only if every field below is filled.</p><pre style="overflow-x:auto;background:var(--surface-2);padding:1rem;border-radius:var(--r);margin:0;font-size:.85rem">game, game_version, resolution, preset, upscaling,
+cpu, gpu, ram_config, driver_version,
+avg_fps, fps_1pct_low, test_scene,
+source_name, source_url, tested_on</pre></div></div></div>
+<h2 style="margin:3.5rem 0 1.5rem">Game library</h2>
+<p class="muted" style="margin-top:-1rem">Grouping only. Filtering is a prototype and not functional.</p><section class="game-group"><h3>Competitive shooters</h3><div class="table-scroll"><table><thead><tr><th scope="col">Game</th><th scope="col">Benchmark</th><th scope="col">Source and test conditions</th></tr></thead><tbody><tr><th scope="row">Counter-Strike 2</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">Valorant</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">Rainbow Six Siege X</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">Overwatch 2</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr></tbody></table></div></section><section class="game-group"><h3>Battle royale</h3><div class="table-scroll"><table><thead><tr><th scope="col">Game</th><th scope="col">Benchmark</th><th scope="col">Source and test conditions</th></tr></thead><tbody><tr><th scope="row">PUBG: Battlegrounds</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">Fortnite</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">Apex Legends</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">Call of Duty: Warzone</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr></tbody></table></div></section><section class="game-group"><h3>AAA action and adventure</h3><div class="table-scroll"><table><thead><tr><th scope="col">Game</th><th scope="col">Benchmark</th><th scope="col">Source and test conditions</th></tr></thead><tbody><tr><th scope="row">Cyberpunk 2077</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">Marvel's Spider-Man Remastered</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">Elden Ring</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">Hogwarts Legacy</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr></tbody></table></div></section><section class="game-group"><h3>Racing</h3><div class="table-scroll"><table><thead><tr><th scope="col">Game</th><th scope="col">Benchmark</th><th scope="col">Source and test conditions</th></tr></thead><tbody><tr><th scope="row">Forza Horizon 5</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">F1 25</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr></tbody></table></div></section><section class="game-group"><h3>Simulation</h3><div class="table-scroll"><table><thead><tr><th scope="col">Game</th><th scope="col">Benchmark</th><th scope="col">Source and test conditions</th></tr></thead><tbody><tr><th scope="row">Microsoft Flight Simulator 2024</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">Cities: Skylines II</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr></tbody></table></div></section><section class="game-group"><h3>Strategy</h3><div class="table-scroll"><table><thead><tr><th scope="col">Game</th><th scope="col">Benchmark</th><th scope="col">Source and test conditions</th></tr></thead><tbody><tr><th scope="row">Civilization VI</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr><tr><th scope="row">Age of Empires IV</th><td><span class="chip chip-warn">Benchmark data unavailable</span></td><td class="muted">Not set</td></tr></tbody></table></div></section></div></main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="../index.html"><i aria-hidden="true"></i>CoreForge</a>
+<p class="muted" style="margin-top:1rem;max-width:32ch">Build Smarter. Game Harder. Create Without Limits.</p></div>
+<div><h2>Product categories</h2><ul>
+<li><a href="../products/cpu.html">Processors</a></li><li><a href="../products/gpu.html">Graphics cards</a></li><li><a href="../products/motherboard.html">Motherboards</a></li><li><a href="../products/ram.html">Memory</a></li><li><a href="../pages/components.html">All components</a></li></ul></div>
+<div><h2>Tools</h2><ul>
+<li><a href="../builds/builder.html">PC Builder</a></li><li><a href="../compare/index.html">Comparison tools</a></li><li><a href="../builds/budget.html">Build by Budget</a></li><li><a href="../performance/gaming.html">Performance database</a></li><li><a href="../guides/index.html">Buying guides</a></li></ul></div>
+<div><h2>CoreForge</h2><ul>
+<li><a href="../pages/about.html">About</a></li><li><a href="../pages/contact.html">Contact</a></li><li><a href="../pages/privacy.html">Privacy Policy</a></li><li><a href="../pages/terms.html">Terms of Use</a></li><li><a href="../pages/methodology.html">Data and benchmark methodology</a></li></ul></div>
+</div>
+<div class="foot-note"><span>CoreForge is a static design prototype. All products, prices, availability and specifications shown are sample data. Brand names belong to their owners; no partnership is implied.</span><span>Prices in Bangladeshi taka (BDT).</span></div>
+</div></footer>
+</body>
+</html>

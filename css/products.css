@@ -1,0 +1,21 @@
+.shop{display:grid;grid-template-columns:260px minmax(0,1fr);gap:2rem;align-items:start}
+.filters details{border-bottom:1px solid var(--border);padding:.6rem 0}
+.filters summary{cursor:pointer;font-weight:600;min-height:36px;display:flex;align-items:center}
+.filters .check{font-size:.9rem}
+.sortbar{display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap;margin-bottom:1.2rem}
+.sortbar select{width:auto;min-width:220px}
+.plist{display:grid;gap:1rem}
+.prow{display:grid;grid-template-columns:150px 1fr auto;gap:1.3rem;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1rem}
+.prow h2{font-size:1.15rem;margin:.1rem 0 .4rem}
+.prow .brand{color:var(--muted);font-size:.85rem}
+.specs{list-style:none;margin:0 0 .6rem;padding:0;display:flex;flex-wrap:wrap;gap:.3rem 1.1rem;color:var(--muted);font-size:.9rem}
+.specs b{color:var(--text);font-weight:500}
+.buy{text-align:right;display:grid;gap:.5rem;justify-items:end}
+.buy .btn{width:100%}
+.detail{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:3rem;align-items:start}
+.spec-table th{width:35%}
+@media (max-width:900px){
+  .shop,.detail{grid-template-columns:1fr}
+  .prow{grid-template-columns:110px 1fr}.buy{grid-column:1/-1;justify-items:stretch;text-align:left;grid-template-columns:1fr 1fr 1fr}
+}
+@media (max-width:520px){.prow{grid-template-columns:1fr}.buy{grid-template-columns:1fr}}

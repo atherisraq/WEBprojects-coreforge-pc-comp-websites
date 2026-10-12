@@ -1,0 +1,13 @@
+.cmp th:first-child,.cmp td:first-child{position:sticky;left:0;background:var(--surface-2);z-index:1}
+.cmp thead th:first-child{background:var(--surface-2)}
+.cmp td.diff{color:var(--lime);font-weight:500}
+.cmp td.low{color:var(--warn)}
+.cmp .head-cell{display:grid;gap:.4rem}
+.cmp .head-cell .price{font-size:1.1rem}
+.verdicts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.verdict{border:1px solid var(--border);border-top:3px solid var(--teal);padding:1.1rem 1.2rem;background:var(--surface);border-radius:var(--r)}
+.verdict h3{font-size:1rem;margin-bottom:.4rem}
+.verdict p{margin:0;color:var(--muted);font-size:.92rem}
+.pair-nav{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2rem}
+.cmp tr.diffrow td,.cmp tr.diffrow th:not(:first-child){background:rgba(93,214,192,.07)}
+.cmp tr.diffrow th:first-child{background:#1f2a2d}

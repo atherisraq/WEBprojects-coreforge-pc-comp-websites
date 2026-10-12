@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PC Builder | CoreForge</title>
+<meta name="description" content="Static PC configurator prototype with compatibility status and BDT totals.">
+<!-- Add a canonical URL here once a real domain is configured. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/builder.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="utility"><div class="wrap">
+<span>Prototype with sample data. Prices are not live.</span>
+<ul>
+<li><a href="../pages/search.html">Search</a></li>
+<li><a href="../pages/saved-builds.html">Saved Builds</a></li>
+<li><a href="../pages/compare-list.html">Compare List</a></li>
+<li><a href="../pages/wishlist.html">Wishlist</a></li>
+<li><a href="../pages/account.html">Account</a></li>
+<li><span aria-label="Currency: Bangladeshi taka">Currency: BDT (৳)</span></li>
+</ul></div></div>
+<div class="wrap"><div class="bar">
+<a class="logo" href="../index.html"><i aria-hidden="true"></i>CoreForge</a>
+<input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+<label class="burger" for="nav-toggle" aria-hidden="true">Menu</label>
+<nav class="nav" aria-label="Main">
+<ul>
+<li class="has-menu"><a class="top" href="../pages/components.html">Components</a><div class="menu"><a href="../products/cpu.html">Processors (CPU)</a><a href="../products/gpu.html">Graphics Cards (GPU)</a><a href="../products/motherboard.html">Motherboards</a><a href="../products/ram.html">Memory (RAM)</a><a href="../products/storage.html">Storage (SSD & HDD)</a><a href="../products/psu.html">Power Supplies (PSU)</a><a href="../products/case.html">PC Cases</a><a href="../products/cooler.html">CPU Coolers</a><a href="../products/fans.html">Case Fans</a><a href="../products/monitors.html">Monitors</a><a href="../products/peripherals.html">Peripherals</a><a href="../products/prebuilt.html">Prebuilt PCs</a></div></li>
+<li><a class="top" href="../builds/builder.html" aria-current="page">PC Builder</a></li>
+<li><a class="top" href="../compare/index.html">Compare</a></li>
+<li><a class="top" href="../builds/budget.html">Build by Budget</a></li>
+<li class="has-menu"><a class="top" href="../performance/gaming.html">Performance</a><div class="menu" style="min-width:260px;grid-template-columns:1fr"><a href="../performance/gaming.html">Gaming performance</a><a href="../performance/creator.html">Creator and productivity</a><a href="../builds/compare-builds.html">Compare builds</a></div></li>
+<li><a class="top" href="../guides/index.html">Guides &amp; Reviews</a></li>
+</ul>
+<a class="btn btn-primary build-cta" href="../builds/builder.html">Build My PC</a>
+</nav></div></div>
+</header>
+<main id="main">
+<div class="wrap"><div class="page-title"><p class="crumbs"><a href="../index.html">Home</a> / PC Builder</p><h1>PC Builder</h1><p class=lede>Pick one part per slot. Each check is marked verified only when the data supports it.</p></div></div><div class="wrap section" style="padding-top:0">
+<p class="notice "><strong>Sample data.</strong> This is a static configurator. Selecting parts, live totals, automatic compatibility checks and saved builds need JavaScript or a backend. The example below is fixed.</p>
+<ol class="steps" aria-label="Builder steps"><li>Choose components</li><li>Review compatibility</li><li>Check the budget</li><li>Analyze performance</li></ol>
+<div class="layout-2"><div class="slot-list"><div class="slot" id="slot-cpu"><div class="label">CPU<small>Selected</small></div><div><div class="name">AMD Ryzen 5 5600</div><div class="meta">AM4 | 6 / 12 | 3.5 / 4.4 GHz</div></div>
+<div class="actions"><span class="price">৳11,500</span><a class="btn btn-sm" href="../products/cpu.html">Replace</a><button class="btn btn-sm" type="button" disabled>Remove</button></div></div><div class="slot" id="slot-cooler"><div class="label">CPU cooler<small>Selected</small></div><div><div class="name">DeepCool AK400</div><div class="meta">Air, single tower | AM4, AM5, LGA1700</div></div>
+<div class="actions"><span class="price">৳2,800</span><a class="btn btn-sm" href="../products/cooler.html">Replace</a><button class="btn btn-sm" type="button" disabled>Remove</button></div></div><div class="slot" id="slot-motherboard"><div class="label">Motherboard<small>Selected</small></div><div><div class="name">ASUS PRIME B550M-A</div><div class="meta">AM4 | B550 | Micro-ATX</div></div>
+<div class="actions"><span class="price">৳11,500</span><a class="btn btn-sm" href="../products/motherboard.html">Replace</a><button class="btn btn-sm" type="button" disabled>Remove</button></div></div><div class="slot" id="slot-ram"><div class="label">RAM<small>Selected</small></div><div><div class="name">Corsair Vengeance LPX 16GB (2 x 8 GB) DDR4-3200</div><div class="meta">16 GB | DDR4 | 3200 MT/s</div></div>
+<div class="actions"><span class="price">৳4,800</span><a class="btn btn-sm" href="../products/ram.html">Replace</a><button class="btn btn-sm" type="button" disabled>Remove</button></div></div><div class="slot" id="slot-gpu"><div class="label">GPU<small>Selected</small></div><div><div class="name">NVIDIA GeForce RTX 4060 8GB (partner model)</div><div class="meta">8 GB GDDR6 | 115 W | PCIe 4.0 x8</div></div>
+<div class="actions"><span class="price">৳36,000</span><a class="btn btn-sm" href="../products/gpu.html">Replace</a><button class="btn btn-sm" type="button" disabled>Remove</button></div></div><div class="slot" id="slot-storage"><div class="label">Storage<small>Selected</small></div><div><div class="name">Kingston NV2 1TB NVMe SSD</div><div class="meta">1 TB | PCIe 4.0 x4 NVMe | Up to 3,500 MB/s</div></div>
+<div class="actions"><span class="price">৳5,200</span><a class="btn btn-sm" href="../products/storage.html">Replace</a><button class="btn btn-sm" type="button" disabled>Remove</button></div></div><div class="slot" id="slot-psu"><div class="label">PSU<small>Selected</small></div><div><div class="name">Corsair CV650 650W</div><div class="meta">650 W | 80 PLUS Bronze | Non-modular</div></div>
+<div class="actions"><span class="price">৳6,200</span><a class="btn btn-sm" href="../products/psu.html">Replace</a><button class="btn btn-sm" type="button" disabled>Remove</button></div></div><div class="slot" id="slot-case"><div class="label">PC case<small>Selected</small></div><div><div class="name">Corsair 4000D Airflow</div><div class="meta">ATX mid tower | ATX, Micro-ATX, Mini-ITX</div></div>
+<div class="actions"><span class="price">৳9,500</span><a class="btn btn-sm" href="../products/case.html">Replace</a><button class="btn btn-sm" type="button" disabled>Remove</button></div></div><div class="slot" id="slot-fans"><div class="label">Case fans<small>Selected</small></div><div><div class="name">3 x Arctic P12 PWM 120mm</div><div class="meta">120 mm | 200 to 1,800 RPM</div></div>
+<div class="actions"><span class="price">৳2,100</span><a class="btn btn-sm" href="../products/fans.html">Replace</a><button class="btn btn-sm" type="button" disabled>Remove</button></div></div><div class="slot empty" id="slot-extras"><div class="label">Monitor and peripherals (optional)<small>Empty</small></div><div class="meta">Add a monitor, keyboard or mouse. Not required for a working build.</div><div class="actions"><a class="btn btn-sm" href="../products/monitors.html">Add monitor</a><a class="btn btn-sm" href="../products/peripherals.html">Add peripherals</a></div></div></div>
+<aside class="sticky"><div class="panel"><h2>Build summary</h2>
+<p class="total">৳89,600</p><p class="muted" style="margin:0">Sample prices, 10 slots</p>
+<div class="meter" role="img" aria-label="90 percent of the sample budget used"><i style="width:90%"></i></div>
+<dl class="kv"><dt>Budget (example)</dt><dd class="num">৳1,00,000</dd><dt>Remaining</dt><dd class="num">৳10,400</dd><dt>Estimated peak draw</dt><dd class="num">about 250 W</dd><dt>Recommended PSU</dt><dd class="num">550 W or more</dd><dt>Selected PSU</dt><dd class="num">650 W</dd></dl>
+<p class="muted" style="font-size:.82rem;margin-top:.8rem">Power is a rule-of-thumb estimate (CPU 65 W, GPU 115 W, about 70 W for other parts), not a measurement. Follow the GPU maker's stated PSU requirement for the exact card.</p>
+<p class="notice bad" style="margin:1rem 0">Not verified as compatible. 5 checks verified, 4 unknown.</p>
+<h3>Missing</h3><p class="muted" style="margin-top:0">Monitor and peripherals (optional).</p>
+<div class="btn-row"><button class="btn btn-sm" type="button" disabled>Save build</button><button class="btn btn-sm" type="button" disabled>Export summary</button><a class="btn btn-sm" href="compare-builds.html">Compare builds</a><a class="btn btn-sm" href="../performance/gaming.html">Analyze performance</a><a class="btn btn-sm btn-primary" href="budget.html">Optimize for budget</a></div>
+</div>
+<div class="panel" style="margin-top:1rem"><h2>Compatibility checks</h2><ul class="checks"><li><span class="chip chip-ok">Verified</span><span>CPU and motherboard socket: both AM4.</span></li><li><span class="chip chip-warn">Unknown</span><span>Chipset support for this CPU: the B550 board may need a BIOS update for Ryzen 5000 CPUs, and the BIOS version is not recorded.</span></li><li><span class="chip chip-ok">Verified</span><span>RAM generation: DDR4 kit, DDR4 board.</span></li><li><span class="chip chip-ok">Verified</span><span>Memory slots: 2 modules, board has 4 slots. Maximum supported capacity is not recorded.</span></li><li><span class="chip chip-ok">Verified</span><span>Board size: Micro-ATX board in a case that lists Micro-ATX support.</span></li><li><span class="chip chip-warn">Unknown</span><span>GPU length against case clearance: GPU dimensions vary by partner model and are not in the data.</span></li><li><span class="chip chip-warn">Unknown</span><span>PSU connectors: the GPU's power connector requirement is not recorded.</span></li><li><span class="chip chip-ok">Verified</span><span>Cooler socket: AM4 is in the cooler's socket list.</span></li><li><span class="chip chip-warn">Unknown</span><span>Cooler height against case limit, and M.2 slot availability: not in the data.</span></li></ul></div></aside></div></div></main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="../index.html"><i aria-hidden="true"></i>CoreForge</a>
+<p class="muted" style="margin-top:1rem;max-width:32ch">Build Smarter. Game Harder. Create Without Limits.</p></div>
+<div><h2>Product categories</h2><ul>
+<li><a href="../products/cpu.html">Processors</a></li><li><a href="../products/gpu.html">Graphics cards</a></li><li><a href="../products/motherboard.html">Motherboards</a></li><li><a href="../products/ram.html">Memory</a></li><li><a href="../pages/components.html">All components</a></li></ul></div>
+<div><h2>Tools</h2><ul>
+<li><a href="../builds/builder.html">PC Builder</a></li><li><a href="../compare/index.html">Comparison tools</a></li><li><a href="../builds/budget.html">Build by Budget</a></li><li><a href="../performance/gaming.html">Performance database</a></li><li><a href="../guides/index.html">Buying guides</a></li></ul></div>
+<div><h2>CoreForge</h2><ul>
+<li><a href="../pages/about.html">About</a></li><li><a href="../pages/contact.html">Contact</a></li><li><a href="../pages/privacy.html">Privacy Policy</a></li><li><a href="../pages/terms.html">Terms of Use</a></li><li><a href="../pages/methodology.html">Data and benchmark methodology</a></li></ul></div>
+</div>
+<div class="foot-note"><span>CoreForge is a static design prototype. All products, prices, availability and specifications shown are sample data. Brand names belong to their owners; no partnership is implied.</span><span>Prices in Bangladeshi taka (BDT).</span></div>
+</div></footer>
+</body>
+</html>

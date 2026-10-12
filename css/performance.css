@@ -1,0 +1,14 @@
+.dash{display:grid;grid-template-columns:340px minmax(0,1fr);gap:2rem;align-items:start}
+.gauge{margin:0 0 1.1rem}
+.gauge .top{display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:.3rem}
+.track{height:10px;background:var(--surface-2);border-radius:99px;border:1px dashed var(--border)}
+.gtext{font-size:.82rem;color:var(--muted);margin-top:.25rem}
+.game-group{margin-bottom:2.5rem}
+.game-group h3{border-bottom:1px solid var(--border);padding-bottom:.6rem;margin-bottom:.8rem}
+.rating-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:2rem}
+.rating{background:var(--surface);padding:1.1rem}
+.rating b{display:block;font:600 1.1rem var(--head);margin-bottom:.3rem;color:var(--lime)}
+.rating p{margin:0;font-size:.88rem;color:var(--muted)}
+.imp-1{color:var(--lime);font-weight:600}.imp-2{color:var(--teal)}.imp-3{color:var(--muted)}
+@media (max-width:1060px){.dash{grid-template-columns:1fr}.rating-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.rating-grid{grid-template-columns:1fr}}

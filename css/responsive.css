@@ -1,0 +1,12 @@
+/* Cross-page responsive refinements. Tested widths: 360, 390, 768, 1024, 1440. */
+@media (max-width:760px){
+  .wrap{width:min(100% - 1.5rem,var(--wrap))}
+  .section-head{align-items:start}
+  th,td{padding:.65rem .75rem}
+  .btn-row .btn{flex:1 1 auto}
+  .layout-2{grid-template-columns:1fr}
+}
+@media (max-width:420px){
+  h1{font-size:2.3rem}
+  .utility .wrap{flex-direction:column;align-items:flex-start;padding:.4rem 0}
+}

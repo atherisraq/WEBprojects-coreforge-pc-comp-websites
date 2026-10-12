@@ -1,0 +1,28 @@
+.slot-list{display:grid;gap:.75rem}
+.slot{display:grid;grid-template-columns:150px 1fr auto;gap:1rem;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:.9rem 1rem}
+.slot .label{font:600 1rem var(--head)}
+.slot .label small{display:block;font:400 .78rem var(--body);color:var(--muted)}
+.slot.empty{border-style:dashed;background:transparent}
+.slot .name{font-weight:500}
+.slot .meta{color:var(--muted);font-size:.86rem}
+.slot .actions{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:flex-end;align-items:center}
+.total{font:700 2rem var(--head)}
+.meter{height:8px;border-radius:99px;background:var(--surface-2);overflow:hidden;margin:.5rem 0 1rem}
+.meter i{display:block;height:100%;background:var(--lime)}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+.checks li{display:grid;grid-template-columns:auto 1fr;gap:.7rem;font-size:.92rem}
+.steps{display:flex;gap:.5rem;flex-wrap:wrap;margin:0 0 2rem;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;padding:.45rem .9rem;border:1px solid var(--border);border-radius:99px;font-size:.88rem;color:var(--muted)}
+.steps li::before{content:counter(s)". ";color:var(--lime)}
+/* budget selector: radios drive visible panel with CSS only */
+.bsel>input{position:absolute;opacity:0;pointer-events:none}
+.bchips{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.bchips label{padding:.55rem 1rem;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;background:var(--surface);font:600 1rem var(--head);min-height:44px;display:flex;align-items:center}
+.bpanel{display:none}
+#b30:checked ~ .p30,#b40:checked ~ .p40,#b50:checked ~ .p50,#b60:checked ~ .p60,#b80:checked ~ .p80,#b100:checked ~ .p100,#b150:checked ~ .p150{display:block}
+#b30:checked ~ .bchips [for=b30],#b40:checked ~ .bchips [for=b40],#b50:checked ~ .bchips [for=b50],#b60:checked ~ .bchips [for=b60],#b80:checked ~ .bchips [for=b80],#b100:checked ~ .bchips [for=b100],#b150:checked ~ .bchips [for=b150]{background:var(--lime);color:#0B0D10;border-color:var(--lime)}
+.bsel>input:focus-visible ~ .bchips{outline:2px solid var(--lime);outline-offset:4px}
+.cols-2{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.build-card{scroll-margin-top:100px;margin-bottom:2.5rem}
+@media (max-width:1060px){.layout-2{grid-template-columns:1fr}.sticky{position:static}}
+@media (max-width:700px){.slot{grid-template-columns:1fr}.slot .actions{justify-content:flex-start}.cols-2{grid-template-columns:1fr}}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creator and productivity analyzer | CoreForge</title>
+<meta name="description" content="Workload-by-workload view of which hardware factors matter.">
+<!-- Add a canonical URL here once a real domain is configured. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/performance.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="utility"><div class="wrap">
+<span>Prototype with sample data. Prices are not live.</span>
+<ul>
+<li><a href="../pages/search.html">Search</a></li>
+<li><a href="../pages/saved-builds.html">Saved Builds</a></li>
+<li><a href="../pages/compare-list.html">Compare List</a></li>
+<li><a href="../pages/wishlist.html">Wishlist</a></li>
+<li><a href="../pages/account.html">Account</a></li>
+<li><span aria-label="Currency: Bangladeshi taka">Currency: BDT (৳)</span></li>
+</ul></div></div>
+<div class="wrap"><div class="bar">
+<a class="logo" href="../index.html"><i aria-hidden="true"></i>CoreForge</a>
+<input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+<label class="burger" for="nav-toggle" aria-hidden="true">Menu</label>
+<nav class="nav" aria-label="Main">
+<ul>
+<li class="has-menu"><a class="top" href="../pages/components.html">Components</a><div class="menu"><a href="../products/cpu.html">Processors (CPU)</a><a href="../products/gpu.html">Graphics Cards (GPU)</a><a href="../products/motherboard.html">Motherboards</a><a href="../products/ram.html">Memory (RAM)</a><a href="../products/storage.html">Storage (SSD & HDD)</a><a href="../products/psu.html">Power Supplies (PSU)</a><a href="../products/case.html">PC Cases</a><a href="../products/cooler.html">CPU Coolers</a><a href="../products/fans.html">Case Fans</a><a href="../products/monitors.html">Monitors</a><a href="../products/peripherals.html">Peripherals</a><a href="../products/prebuilt.html">Prebuilt PCs</a></div></li>
+<li><a class="top" href="../builds/builder.html">PC Builder</a></li>
+<li><a class="top" href="../compare/index.html">Compare</a></li>
+<li><a class="top" href="../builds/budget.html">Build by Budget</a></li>
+<li class="has-menu"><a class="top" href="../performance/gaming.html" aria-current="page">Performance</a><div class="menu" style="min-width:260px;grid-template-columns:1fr"><a href="../performance/gaming.html">Gaming performance</a><a href="../performance/creator.html">Creator and productivity</a><a href="../builds/compare-builds.html">Compare builds</a></div></li>
+<li><a class="top" href="../guides/index.html">Guides &amp; Reviews</a></li>
+</ul>
+<a class="btn btn-primary build-cta" href="../builds/builder.html">Build My PC</a>
+</nav></div></div>
+</header>
+<main id="main">
+<div class="wrap"><div class="page-title"><p class="crumbs"><a href="../index.html">Home</a> / <a href="../performance/gaming.html">Performance</a> / Creator and productivity</p><h1>Creator and productivity analyzer</h1><p class=lede>Each application is limited by different parts. The matrix shows which factors matter most.</p></div></div><div class="wrap section" style="padding-top:0">
+<p class="notice "><strong>Sample data.</strong> The matrix is general guidance, not measured results. Rating a specific build needs verified, application-specific benchmarks, which are not loaded.</p>
+<h2 style="font-size:1.6rem">Rating labels</h2>
+<p class="muted">These labels describe how comfortably a build is expected to handle a workload. They are not universal benchmarks and are assigned per application from the factors below once data exists.</p>
+<div class="rating-grid"><div class="rating"><b>Basic</b><p>Runs the workload with noticeable waits or reduced quality settings.</p></div><div class="rating"><b>Comfortable</b><p>Suitable for typical projects without frequent waits.</p></div><div class="rating"><b>Strong</b><p>Handles larger projects and heavier effects smoothly.</p></div><div class="rating"><b>High-performance</b><p>Suited to demanding, professional-scale work.</p></div></div>
+<h2 style="font-size:1.6rem">What each application depends on</h2>
+<div class="table-scroll"><table class="cmp" style="min-width:980px"><caption>Primary means the factor usually decides performance for that application. Limitations are common bottlenecks to check.</caption><thead><tr><th scope="col">Application</th><th scope="col">CPU multicore</th><th scope="col">Single-core</th><th scope="col">GPU compute</th><th scope="col">VRAM</th><th scope="col">System RAM</th><th scope="col">Storage</th><th scope="col">Encode/decode</th><th scope="col">Limitations to check</th></tr></thead><tbody><tr><th scope="row">Adobe Premiere Pro<br><span class="muted" style="font-weight:400;font-size:.82rem">Video editing</span></th><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-1">Primary</span></td><td class="muted">Hardware decode support depends on codec and chroma format; long timelines need more RAM.</td></tr><tr><th scope="row">DaVinci Resolve<br><span class="muted" style="font-weight:400;font-size:.82rem">Video editing</span></th><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-1">Primary</span></td><td class="muted">VRAM limits effects and resolution; GPU choice matters more than for most editors.</td></tr><tr><th scope="row">Adobe After Effects<br><span class="muted" style="font-weight:400;font-size:.82rem">Video editing</span></th><td><span class="imp-2">Secondary</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td class="muted">Very RAM-hungry; complex compositions need 32 GB or more.</td></tr><tr><th scope="row">Adobe Photoshop<br><span class="muted" style="font-weight:400;font-size:.82rem">Photo and design</span></th><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td class="muted">Large documents and many layers push RAM use.</td></tr><tr><th scope="row">Adobe Lightroom<br><span class="muted" style="font-weight:400;font-size:.82rem">Photo and design</span></th><td><span class="imp-2">Secondary</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td class="muted">Large catalogs benefit from fast SSD storage.</td></tr><tr><th scope="row">Blender<br><span class="muted" style="font-weight:400;font-size:.82rem">3D and rendering</span></th><td><span class="imp-1">Primary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-3">Minor</span></td><td class="muted">GPU rendering scene size is limited by VRAM; software support varies by GPU vendor.</td></tr><tr><th scope="row">Unreal Engine<br><span class="muted" style="font-weight:400;font-size:.82rem">3D and rendering</span></th><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td class="muted">Shader compilation uses many cores; large projects need RAM and VRAM.</td></tr><tr><th scope="row">Autodesk AutoCAD<br><span class="muted" style="font-weight:400;font-size:.82rem">3D and rendering</span></th><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-3">Minor</span></td><td class="muted">Mostly single-core; check the certified hardware list for your version.</td></tr><tr><th scope="row">Visual Studio Code<br><span class="muted" style="font-weight:400;font-size:.82rem">Programming</span></th><td><span class="imp-3">Minor</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td class="muted">Light on its own; extensions, containers and large repositories add load.</td></tr><tr><th scope="row">Visual Studio<br><span class="muted" style="font-weight:400;font-size:.82rem">Programming</span></th><td><span class="imp-2">Secondary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-3">Minor</span></td><td class="muted">Large solutions benefit from RAM and an NVMe SSD.</td></tr><tr><th scope="row">Android Studio<br><span class="muted" style="font-weight:400;font-size:.82rem">Programming</span></th><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-3">Minor</span></td><td class="muted">The emulator and Gradle builds use many threads and a lot of RAM.</td></tr><tr><th scope="row">OBS Studio<br><span class="muted" style="font-weight:400;font-size:.82rem">Streaming</span></th><td><span class="imp-2">Secondary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td class="muted">Hardware encoders (NVENC, AMF, Quick Sync) reduce the CPU cost of streaming.</td></tr><tr><th scope="row">Office, browsing, multitasking<br><span class="muted" style="font-weight:400;font-size:.82rem">General productivity</span></th><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-3">Minor</span></td><td><span class="imp-1">Primary</span></td><td><span class="imp-2">Secondary</span></td><td><span class="imp-3">Minor</span></td><td class="muted">A modern CPU, 16 GB RAM and an SSD cover most needs.</td></tr></tbody></table></div>
+<h2 style="margin:3rem 0 1rem;font-size:1.6rem">Methodology for ratings</h2>
+<ol><li>Collect verified benchmark results per application, using the same test project.</li><li>Normalize each factor (CPU multicore, single-core, GPU compute, VRAM, RAM, storage, encoders) against reference hardware.</li><li>Weight the factors for that application using the matrix above.</li><li>Map the weighted result to a rating label, and show project-complexity limits such as RAM, VRAM and codec support.</li></ol></div></main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="../index.html"><i aria-hidden="true"></i>CoreForge</a>
+<p class="muted" style="margin-top:1rem;max-width:32ch">Build Smarter. Game Harder. Create Without Limits.</p></div>
+<div><h2>Product categories</h2><ul>
+<li><a href="../products/cpu.html">Processors</a></li><li><a href="../products/gpu.html">Graphics cards</a></li><li><a href="../products/motherboard.html">Motherboards</a></li><li><a href="../products/ram.html">Memory</a></li><li><a href="../pages/components.html">All components</a></li></ul></div>
+<div><h2>Tools</h2><ul>
+<li><a href="../builds/builder.html">PC Builder</a></li><li><a href="../compare/index.html">Comparison tools</a></li><li><a href="../builds/budget.html">Build by Budget</a></li><li><a href="../performance/gaming.html">Performance database</a></li><li><a href="../guides/index.html">Buying guides</a></li></ul></div>
+<div><h2>CoreForge</h2><ul>
+<li><a href="../pages/about.html">About</a></li><li><a href="../pages/contact.html">Contact</a></li><li><a href="../pages/privacy.html">Privacy Policy</a></li><li><a href="../pages/terms.html">Terms of Use</a></li><li><a href="../pages/methodology.html">Data and benchmark methodology</a></li></ul></div>
+</div>
+<div class="foot-note"><span>CoreForge is a static design prototype. All products, prices, availability and specifications shown are sample data. Brand names belong to their owners; no partnership is implied.</span><span>Prices in Bangladeshi taka (BDT).</span></div>
+</div></footer>
+</body>
+</html>
